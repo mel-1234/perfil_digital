@@ -1,38 +1,43 @@
-/* Animación para que la tarjeta de perfil aparezca con efecto */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+body {
+    background-color:#8eadac ;
+    color: white;
 }
 
-/* Estilos personalizados */
 .profile-card {
-    animation: fadeInUp 1s ease;
-    border: 2px solid #00adb5;
-    transition: transform 0.3s ease;
-}
-.profile-card:hover {
-    transform: scale(1.02);
+    background: #252525;
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
-/* Sombra y borde para el avatar */
 .avatar {
-    box-shadow: 0 0 15px cyan;
-    transition: transform 0.3s ease;
-}
-.avatar:hover {
-    transform: rotate(5deg) scale(1.05);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid cyan !important; /* Nivel !important */
+    animation: fadeIn 1.5s ease-out;
 }
 
-/* Efecto en el botón */
-button {
-    transition: background-color 0.3s ease, transform 0.2s ease;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid #00adb5;
+    background: #333;
+    color: white;
 }
+
+button {
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 button:hover {
-    transform: scale(1.05);
+    background-color: #007a85;
 }
